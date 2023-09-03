@@ -1,0 +1,533 @@
+/* Master Styles */
+
+
+body {
+  margin: 2em; 
+}
+
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+  width: auto;
+}
+
+.widget-icon{
+    margin-top: 0.6em;
+    float: left;
+}
+
+.widget-body ul{
+    list-style:none;
+}
+
+.cabecera{
+    background-color: #4c4f53;
+    /*padding: 0.1em;*/
+}
+.cont{
+	border: 0.1em;
+	border-color: grey;
+	border-style: solid;
+	padding: 0.5em;
+}
+#salirPopup{
+	float: right;
+	color: white;
+	text-align: right;
+	margin-right: 0.5em;
+	margin-bottom: 25px;
+}
+#salirPopup nav{
+	margin-right: 1em;
+}
+#salirPopup a{
+	color: white;
+	margin-left: 1em;
+}
+#salirPopup a:hover{
+	color: #bed7ed;
+}
+#nestable{
+	margin-left: 0.5em;
+	margin-top: 0.5em;
+}
+.blanc{
+	color: #fbfbfb;
+}
+.actividad{
+	width: 100%;
+	border-radius: 1em;
+	text-align: left;
+	box-shadow: 3px 3px 1px #CCCCCC;
+	background: linear-gradient( 180deg, #dfe0e2, #FFFFFF); 
+	margin-top: 1em;
+	height:70px;
+	margin-right: 1em;
+}
+.activity ul{
+    list-style:none;
+}
+.img_activity{
+	position: relative ; left: -11px; top: -6px;
+}
+.txt_activity{
+	margin-left: 70px;
+	text-align: center;
+	/*width: 200px;*/
+	height: 67px;
+	display: table-cell; 
+	vertical-align:middle;
+}
+#btn_next{
+	float:right;
+	margin: 0.5em;
+	margin-right: 0.8em;
+}
+#tutorial{
+	margin: 0.5em;
+	font-size: 20px;	
+}
+.img_rec{
+	width: 320px;
+	margin: 0 auto;
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+.img_measure{
+	width: 128px;
+	margin: 0 auto;
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+.loading{
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 10%;
+	height: 25%;
+}
+.measurement{
+	margin-top: 3em;
+	margin-bottom: 4em;
+}
+.dd-handle:hover,.dd-handle:hover+.dd-list .dd-handle{background:#bed7ed!important;border:1px solid #3276b1;color:#333!important}
+#valor{
+	width: 83%;
+	
+}
+.nombre_valor{
+	width: 55%;	
+	text-align: left;
+	font-size: 15px;
+	margin: 0.5em;
+}
+.teclado{
+	width: 90%;
+	border-radius: 1em;
+	text-align: center;
+	box-shadow: 3px 3px 1px #CCCCCC;
+	background: linear-gradient( 180deg, #dfe0e2, #FFFFFF); 
+	margin-top: 1em;
+	height: 50px;
+	/*float: left;*/	
+}
+.teclado_entero{
+	text-align: center;
+	width: 100%;
+}
+label{
+	width: 55%;
+	text-align:center;
+}
+.inputValor{
+	text-align:center;
+	width: 85%;
+}
+#numerico{
+	padding-left:20%;
+	/*background-color: grey;*/
+	display: inline-block;
+	width: 100%;
+	margin: 0 auto;
+	
+}
+.txt_numerico{
+	font-size: 30px;
+}
+.cierre{
+	clear: both;
+}
+.cuestionario{
+	padding: 0.5em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+#pregunta{
+	margin: 0.5em;
+	font-size: 20px;
+	background-color: rgba(190, 215, 237, .4);
+	border: 1px solid #3276b1;
+	color: #666!important;
+	/*opacity: 0.6;*/	
+}
+#respuestas{
+	margin: 0.1em;
+	margin-top: 1em;
+	width: 100%;
+}
+.respuesta{
+	width: 100%;
+	border-radius: 1em;
+	text-align: center;
+	box-shadow: 3px 3px 1px #CCCCCC;
+	background: linear-gradient( 180deg, #dfe0e2, #FFFFFF);
+	font-size: 20px;
+	padding: 0.5em;
+}
+article{
+	margin-top: 1em;
+}
+.prioridad{
+	font-size: 24px;
+}
+.priority{
+	/*background-color: grey;*/
+	margin-bottom: 0.6em;
+}
+.s2{
+	color: #666!important;
+}
+.tab-pane ul{
+	padding: 0;
+}
+.tab-pane ul li div{
+	padding-top: 0.8em;
+}
+#bread{
+	
+	text-align:left;	
+}
+#logout{
+	text-align:right;
+	/*margin-top: 0.5em;*/	
+}
+.espacio{
+	height:1px;
+}
+#llamada{
+	color: white;
+	background-color: #666;
+	padding: 0.8em;
+	margin: 0 auto;
+	width: 40%;
+	text-align: center;
+	margin-top:5em;
+}
+.iniciar{
+	padding: 5em;
+	margin: 0 auto;
+	text-align: center;
+}
+#cont_video{
+	border: 0.1em;
+	border-color: grey;
+	border-style: solid;
+	padding: 0.5em;
+}
+#cont_chat{
+	padding: 0.5em;
+	margin-bottom: 1em;
+}
+#cont_chat2{
+	padding: 0.5em;
+	height: 250px;
+}
+#cont_chat3{
+	border: 0.1em;
+	border-color: grey;
+	border-style: solid;
+	padding: 0.5em;
+	height: 250px;
+}
+#sala_espera{
+	border: 0.1em;
+	border-color: grey;
+	border-style: solid;
+	padding: 0.6em;
+	margin: 0 auto;
+	width: 40%;
+	text-align: center;
+	margin-bottom: 2em;
+}
+#sala_espera2{
+	border: 0.1em;
+	border-color: grey;
+	border-style: solid;
+	padding: 0.6em;
+	margin: 0 auto;
+	width: 40%;
+	text-align: center;
+	margin-bottom: 2em;
+	margin-top: 2em;
+}
+.posicion{
+	color: #f3136a;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 0.5em;
+}
+.bolita{
+	background-color: #ec4d3c;
+	border-radius: 200px;
+	width: 30px;
+	height: 30px;
+	padding-top:5px;
+	margin: 0 auto;
+	display: inline-block;
+}
+.bolita_call{
+	background-color: #23abc6;
+	border-radius: 200px;
+	width: 30px;
+	height: 30px;
+	padding-top:5px;
+	margin: 0 auto;
+	margin: 0.2em;
+	display: inline-block;
+}
+.bolita_desactivada{
+	background-color: #bababa;
+	border-radius: 200px;
+	width: 30px;
+	height: 30px;
+	padding-top:5px;
+	margin: 0 auto;
+	margin: 0.2em;
+	display: inline-block;
+}
+.bolita_me{
+	background-color: #f3136a;
+	border-radius: 200px;
+	width: 30px;
+	height: 30px;
+	padding-top:5px;
+	margin: 0 auto;
+	margin: 0.2em;
+	margin-right: 0.5em;
+	text-align: center;
+	display: inline-block;
+}
+.bolita_peer{
+	background-color: #12007c;
+	border-radius: 200px;
+	width: 30px;
+	height: 30px;
+	padding-top:5px;
+	margin: 0 auto;
+	margin: 0.2em;
+	margin-right: 0.5em;
+	text-align: center;
+	display: inline-block;
+}
+.bolita_user{
+	background-color: #f3136a;
+	border-radius: 200px;
+	width: 30px;
+	height: 30px;
+	padding-top:5px;
+	margin: 0 auto;
+	margin: 0.2em;
+	margin-right: 0.5em;
+	text-align: center;
+	display: inline-block;
+}
+.bolita_estado_free{
+	background-color: #7fc31b;
+	border-radius: 200px;
+	width: 80px;
+	height: 80px;
+	padding-top:12px;
+	margin: 0 auto;
+	margin: 0.2em;
+	display: inline-block;
+}
+.bolita_estado_busy{
+	background-color: #c2000b;
+	border-radius: 200px;
+	width: 80px;
+	height: 80px;
+	padding-top:12px;
+	margin: 0 auto;
+	margin: 0.2em;
+	display: inline-block;
+}
+.bolita_estado_free2{
+	background-color: #7fc31b;
+	border-radius: 200px;
+	width: 20px;
+	height: 20px;	
+	margin: 0 auto;
+	margin: 0.2em;
+	display: inline-block;
+}
+.bolita_estado_busy2{
+	background-color: #c2000b;
+	border-radius: 200px;
+	width: 20px;
+	height: 20px;
+	margin: 0 auto;
+	margin: 0.2em;
+	display: inline-block;
+}
+.posicion_free{
+	color: #7fc31b;
+	font-size: 18px;
+	font-weight: bold;
+	
+}
+.posicion_busy{
+	color: #c2000b;
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 0.5em;
+}
+.posicion_free2{
+	color: #7fc31b;
+	font-size: 12px;
+	font-weight: bold;	
+}
+.posicion_busy2{
+	color: #c2000b;
+	font-size: 12px;
+	font-weight: bold;
+}
+.blanco{
+	color: white;
+}
+.blanco2{
+	color: white;
+	margin-left: 0.3em;
+}
+#myvideo{
+	z-index: 1;
+	border: 0.1em;
+	border-color: #f3136a;
+	border-style: solid;
+	width: 74%;
+	margin: 0;
+	padding: 0;
+	margin-left: 1em;
+}
+.fullscreen{
+	width: 100%;
+}
+#peervideo{
+	z-index: 2;
+	border: 0.1em;
+	border-color: #f3136a;
+	border-style: solid;
+	width: 23%;
+	margin: 0;
+	margin-left: 1em;
+	padding: 0;
+}
+.videos{
+	margin-bottom: 2em;
+}
+.user_name{
+	margin-left: 1em;
+}
+#txt_chat{
+	background-color: #f0eeee;
+	padding: 0.5em;
+	width: 100%;
+	height: 100px;
+	vertical-align: top;
+	border: none;
+	margin-top: 1.5em;
+}
+#enviar{
+	background-color: #f3136a;
+	color: white;
+	float: right;
+	padding-right: 1.5em;
+	padding-left: 1.5em;
+	border: none;
+	margin-top: 1em;
+	margin-top: 1em;
+}
+#list_chat{
+	height: 250px;
+	overflow-y: auto;
+}
+#list_chat ul{
+    list-style:none;
+	margin: 0;
+}
+#list_chat ul li{
+	padding-bottom: 0.5em;
+	margin-bottom: 0.5em;
+	border-bottom: dashed 1px #f0eeee; 
+}
+.aceptar{
+	padding: 0.5em;
+	display: block;
+	cursor: pointer;
+}
+.aceptar:hover{
+	padding: 0.5em;
+	display: block;
+	background-color: #ffd6e6;
+	cursor: pointer;
+}
+.txt_video{
+    position:absolute;
+    bottom:0.3em;
+    left: 1em;
+}
+#video{
+	color: white;
+	background-color: #666;
+	padding: 0.8em;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+
+#video .desactivado{
+	border: 2px solid #23abc6;
+}
+
+#base{
+	background-image: url("/app/img/background.png") ;
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+
+@media screen and (max-width: 550px) {
+    #base {background-image: url('/app/img/background2.png')}
+                }
+#estado{
+	padding-left: 1em;
+	padding-top: 1em;
+}
+#cabecera{
+	padding-left: 1em;
+	padding-top: 1em;
+}
+.servicio{
+	font-weight: bold;
+	font-size: 16px;
+	margin-left: 1em;
+}
+#waiting{
+	margin: 0 auto;
+}

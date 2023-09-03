@@ -1,0 +1,153 @@
+<div>
+<!-- NEW WIDGET START -->
+						<article class="col-xs-12 col-sm-6 col-md-8 ">
+<!-- Widget ID (each widget will need unique ID)-->
+							<div class="jarviswidget" id="wid-id-0">
+								<!-- widget options:
+									usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+									
+									data-widget-colorbutton="false"	
+									data-widget-editbutton="false"
+									data-widget-togglebutton="false"
+									data-widget-deletebutton="false"
+									data-widget-fullscreenbutton="false"
+									data-widget-custombutton="false"
+									data-widget-collapsed="true" 
+									data-widget-sortable="false"
+									
+								-->
+								<header>
+									<h2><i class="fa fa-video-camera" aria-hidden="true"></i> VideoChat</h2>				
+									
+								</header>
+
+								<!-- widget div-->
+								<div>
+									
+									<!-- widget content -->
+									<div class="widget-body">
+										
+										<h2>My id - {{mypeerid}}</h2>
+										<div [hidden]="!mypeerid || videocalling">
+										<!-- <h2>My id - {{mypeerid}}</h2>-->
+										<div id="llamada">
+										Realizar videoconferencia
+										<div class="bolita_call" *ngIf='isCalling == false'><a (click)="call()" style="cursor:pointer"><span class="blanco"><i class="fa fa-video-camera" aria-hidden="true"></i></span></a></div>
+										<div class="bolita_desactivada" *ngIf='isCalling == true'><span class="blanco"><i class="fa fa-video-camera" aria-hidden="true"></i></span></div>
+										<div class="bolita" *ngIf='isCalling == true'><a (click)="stopCall()" style="cursor:pointer"><span class="blanco"><i class="fa fa-stop" aria-hidden="true"></i></span></a></div>
+										</div>
+
+										</div>
+										<div class="iniciar" [hidden]="mypeerid">
+										<h1><i class="fa fa-spinner fa-spin fa-2x fa-fw"></i> Iniciando VideoChat...</h1>
+										</div>
+
+									
+										<div id="sala_espera" [hidden]="!mypeerid || videocalling">
+										<p><img src="/app/img/waitingroom.png" width="125" class="img-responsive" id="waiting"></p>
+											<label><b>Posición</b> <span class="posicion">{{queueNumber}}</span></label>
+										<p><em>Su llamada se atenderá en breve por un profesional.</em></p>
+										</div>
+										
+
+										<div [hidden]="!videocalling" class="col-xs-12 col-sm-12 col-md-12" class="videos">
+										<div class="user_name"><h2>Profesional Name: {{anothername}}</h2></div>
+										
+										<div id="myvideo" class="col-xs-12 col-sm-6 col-md-8">
+										<video #peervideo autoplay class="fullscreen"></video>
+										<div id="video" class="col-xs-12 col-sm-6 col-md-8">
+										
+										<div class="bolita_call" *ngIf='micro == true'><a (click)="stopMicro()" style="cursor:pointer"><span class="blanco"><i class="fa fa-microphone" aria-hidden="true"></i></span></a></div>
+										<div class="bolita_desactivada" *ngIf='micro == false'><a (click)="stopMicro()" style="cursor:pointer"><span class="blanco"><i class="fa fa-microphone" aria-hidden="true"></i></span></a></div>
+										<div class="bolita_call" *ngIf='video == true'><a (click)="stopVideo()" style="cursor:pointer" disabled="isCalling"><span class="blanco"><i class="fa fa-video-camera" aria-hidden="true"></i></span></a></div>
+										<div class="bolita_desactivada" *ngIf='video == false'><a (click)="stopVideo()" style="cursor:pointer" disabled="isCalling"><span class="blanco"><i class="fa fa-video-camera" aria-hidden="true"></i></span></a></div>
+										<div class="bolita"><a (click)="stopCall()" style="cursor:pointer"><span class="blanco"><i class="fa fa-stop" aria-hidden="true"></i></span></a></div>
+										</div>
+										</div>
+
+										<div id="peervideo" class="col-xs-6 col-sm-6 col-md-4">
+										<video #myvideo muted="true" autoplay class="fullscreen"></video>
+										</div>
+										<div class="cierre"></div>
+										</div>
+
+									</div>
+									<!-- end widget content -->
+									
+								</div>
+								<!-- end widget div -->
+								
+							</div>
+							<!-- end widget -->
+
+</article>
+						<!-- WIDGET END -->
+
+<article class="col-xs-12 col-sm-6 col-md-4 ">
+<!-- Widget ID (each widget will need unique ID)-->
+							<div class="jarviswidget" id="wid-id-0">
+								<!-- widget options:
+									usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+									
+									data-widget-colorbutton="false"	
+									data-widget-editbutton="false"
+									data-widget-togglebutton="false"
+									data-widget-deletebutton="false"
+									data-widget-fullscreenbutton="false"
+									data-widget-custombutton="false"
+									data-widget-collapsed="true" 
+									data-widget-sortable="false"
+									
+								-->
+								<header>
+									<h2><i class="fa fa-comments-o" aria-hidden="true"></i> Chat</h2>				
+									
+								</header>
+
+								<!-- widget div-->
+								<div>
+									
+									<!-- widget content -->
+									<div class="widget-body">
+										
+										<div id="cont_chat" class="col-xs-12 col-sm-12 col-md-12">
+										<div [hidden]="!videocalling">
+										<div id="list_chat">
+										<ul class="list-unstyled">
+											<li *ngFor="let incomingText of incomingTexts">
+												<div>
+                            <div style="float:left;" *ngIf="incomingText.tipo == '1'" class="bolita_me"><span class="blanco"><i class="fa fa-user" aria-hidden="true"></i></span></div>
+                            <div style="float:left;" *ngIf="incomingText.tipo == '2'"class="bolita_peer"><span class="blanco"><i class="fa fa-user-md" aria-hidden="true"></i></span></div>
+                            <div  style="float: left;">{{incomingText.mensaje}}</div>
+							<div style="float: right;">{{incomingText.time}}</div>
+							</div>
+							<div style="clear: both;"></div>
+												<br>
+											</li>
+										</ul>
+										</div>
+										<textarea [(ngModel)]="msgtext" id="txt_chat" class="col-xs-6 col-sm-6 col-md-4" ROWS=3 COLS=30> </TEXTAREA>
+
+										<button (click)="sendMessage(msgtext)" [disabled]="!msgtext" id="enviar">Enviar</button>
+										<br>
+										</div>
+										</div>
+
+											
+										
+									</div>
+									<!-- end widget content -->
+									
+								</div>
+								<!-- end widget div -->
+								
+							</div>
+							<!-- end widget -->
+
+</article>
+						<!-- WIDGET END -->
+
+</div>
+
+
+
